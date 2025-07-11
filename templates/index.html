@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Générateur de mot de passe</title>
+</head>
+<body>
+    <h1>Générateur de mot de passe</h1>
+    <form method="post">
+        <label>Nombre de symboles :</label>
+        <input type="number" name="longueur" min="1" required>
+        <button type="submit">Générer</button>
+    </form>
+
+    {% if mot_de_passe %}
+        <h2>Mot de passe généré :</h2>
+        <p><strong>{{ mot_de_passe }}</strong></p>
+    {% endif %}
+</body>
+</html>
